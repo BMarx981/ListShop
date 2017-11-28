@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var emailOutlet: UITextField!
+    @IBOutlet weak var passwordOutlet: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +25,21 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func registerPressed(_ sender: UIButton) {
+        FirebaseApp.
+        FirebaseAuth.auth()?.createUser(withEmail: emailOutlet.text!, password: passwordOutlet.text!, completion: {
+            user, error in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration Successful!")
+                
+                self.performSegue(withIdentifier: "shoplistSegue", sender: self)
+            }
+            
+        })
+    }
+    
     /*
     // MARK: - Navigation
 

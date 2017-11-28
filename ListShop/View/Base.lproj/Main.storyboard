@@ -101,6 +101,9 @@
                                         <state key="normal" title="Log in">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="LiP-qB-Srb" eventType="touchUpInside" id="T5e-u8-yvA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,10 +154,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nhc-SD-QDO"/>
                     </view>
+                    <connections>
+                        <outlet property="emailOutlet" destination="EtY-ll-EV8" id="OM3-mx-Cav"/>
+                        <outlet property="passwordOutlet" destination="qPO-QQ-2o1" id="C5l-5o-qmY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rQ-XR-5Wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="-269"/>
+            <point key="canvasLocation" x="1729" y="132"/>
         </scene>
         <!--Register-->
         <scene sceneID="n5x-Ff-UH8">
@@ -171,7 +178,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Mn6-0F-XFg"/>
-                                            <constraint firstAttribute="width" constant="270" id="yzE-Yp-98G"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="yzE-Yp-98G"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -180,7 +187,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-2g-nM6">
                                         <rect key="frame" x="0.0" y="64" width="270" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="270" id="QH3-Ys-6Kh"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="QH3-Ys-6Kh"/>
                                             <constraint firstAttribute="height" constant="34" id="qAR-V9-anp"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -192,12 +199,15 @@
                                         <color key="backgroundColor" red="0.0" green="0.51210139656388898" blue="0.92678493923611116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="40b-AH-8Pm"/>
-                                            <constraint firstAttribute="width" constant="270" id="hhX-ED-5La"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="hhX-ED-5La"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="wIn-i5-H7Z" eventType="touchUpInside" id="bdI-Gc-Ls7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -210,10 +220,14 @@
                         <viewLayoutGuide key="safeArea" id="ZqV-Kw-Fiv"/>
                     </view>
                     <navigationItem key="navigationItem" id="zq3-Oy-Tvo"/>
+                    <connections>
+                        <outlet property="emailOutlet" destination="fnn-Y9-Bq3" id="qr7-HY-oRT"/>
+                        <outlet property="passwordOutlet" destination="MNR-2g-nM6" id="zGs-YT-MaA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cf-lE-qHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="464"/>
+            <point key="canvasLocation" x="1730" y="849"/>
         </scene>
         <!--ListShopVC-->
         <scene sceneID="iUF-CG-Prs">
@@ -224,7 +238,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-Ui-cow">
-                                <rect key="frame" x="67" y="44" width="240" height="128"/>
+                                <rect key="frame" x="16" y="60" width="343" height="587"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -235,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUx-pc-JJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="191"/>
+            <point key="canvasLocation" x="2505" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1a3-w5-fav">
