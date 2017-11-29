@@ -14,6 +14,7 @@
 		D3547BFC1FC8C0F6008B9C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3547BFB1FC8C0F6008B9C48 /* Assets.xcassets */; };
 		D3547BFF1FC8C0F6008B9C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3547BFD1FC8C0F6008B9C48 /* LaunchScreen.storyboard */; };
 		D3547C071FC8C161008B9C48 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3547C061FC8C161008B9C48 /* ListTableViewController.swift */; };
+		D3969DEB1FCE1B4500BACB45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3547C081FC8C234008B9C48 /* GoogleService-Info.plist */; };
 		D3EC948C1FC8D84D00AFAEB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC948B1FC8D84D00AFAEB2 /* LoginViewController.swift */; };
 		D3EC948E1FC8D85F00AFAEB2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC948D1FC8D85F00AFAEB2 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -178,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3547BFF1FC8C0F6008B9C48 /* LaunchScreen.storyboard in Resources */,
+				D3969DEB1FCE1B4500BACB45 /* GoogleService-Info.plist in Resources */,
 				D3547BFC1FC8C0F6008B9C48 /* Assets.xcassets in Resources */,
 				D3547BFA1FC8C0F6008B9C48 /* Main.storyboard in Resources */,
 			);
@@ -383,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W3F7S8Q67;
 				INFOPLIST_FILE = ListShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bmarx.ListShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -399,6 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W3F7S8Q67;
 				INFOPLIST_FILE = ListShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bmarx.ListShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";

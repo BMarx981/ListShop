@@ -157,6 +157,7 @@
                     <connections>
                         <outlet property="emailOutlet" destination="EtY-ll-EV8" id="OM3-mx-Cav"/>
                         <outlet property="passwordOutlet" destination="qPO-QQ-2o1" id="C5l-5o-qmY"/>
+                        <segue destination="jy1-Ye-UxI" kind="show" identifier="loginSegue" id="lzd-Zo-KKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rQ-XR-5Wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -223,6 +224,7 @@
                     <connections>
                         <outlet property="emailOutlet" destination="fnn-Y9-Bq3" id="qr7-HY-oRT"/>
                         <outlet property="passwordOutlet" destination="MNR-2g-nM6" id="zGs-YT-MaA"/>
+                        <segue destination="jy1-Ye-UxI" kind="show" identifier="registerSegue" id="Nth-ad-CLk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cf-lE-qHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUx-pc-JJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="132"/>
+            <point key="canvasLocation" x="2551" y="421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1a3-w5-fav">
@@ -270,4 +272,7 @@
             <point key="canvasLocation" x="136" y="132.23388305847078"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lzd-Zo-KKE"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -26,15 +27,14 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
-        FirebaseApp.
-        FirebaseAuth.auth()?.createUser(withEmail: emailOutlet.text!, password: passwordOutlet.text!, completion: {
+        Auth.auth().createUser(withEmail: emailOutlet.text!, password: passwordOutlet.text!, completion: {
             user, error in
             if error != nil {
                 print(error!)
             } else {
                 print("Registration Successful!")
                 
-                self.performSegue(withIdentifier: "shoplistSegue", sender: self)
+                self.performSegue(withIdentifier: "registerSegue", sender: self)
             }
             
         })
