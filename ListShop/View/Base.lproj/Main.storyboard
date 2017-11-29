@@ -116,6 +116,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="LiP-qB-Srb" eventType="touchUpInside" id="T5e-u8-yvA"/>
+                                            <segue destination="ngj-JL-bN3" kind="show" identifier="loginSegue" id="ktf-Zs-OGh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,12 +151,39 @@
                     <connections>
                         <outlet property="emailOutlet" destination="EtY-ll-EV8" id="OM3-mx-Cav"/>
                         <outlet property="passwordOutlet" destination="qPO-QQ-2o1" id="C5l-5o-qmY"/>
-                        <segue destination="jy1-Ye-UxI" kind="show" identifier="loginSegue" id="lzd-Zo-KKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rQ-XR-5Wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1729" y="132"/>
+        </scene>
+        <!--List Table View Controller-->
+        <scene sceneID="Bzx-qh-EeN">
+            <objects>
+                <tableViewController id="ngj-JL-bN3" customClass="ListTableViewController" customModule="ListShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dzp-bK-bd5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="id" id="ztt-yv-jnK">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztt-yv-jnK" id="zG2-SK-5T5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ngj-JL-bN3" id="zXF-Hh-KdM"/>
+                            <outlet property="delegate" destination="ngj-JL-bN3" id="zzE-s6-qfm"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awr-Dx-TAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576" y="514"/>
         </scene>
         <!--Register-->
         <scene sceneID="n5x-Ff-UH8">
@@ -201,6 +229,7 @@
                                         </state>
                                         <connections>
                                             <action selector="registerPressed:" destination="wIn-i5-H7Z" eventType="touchUpInside" id="bdI-Gc-Ls7"/>
+                                            <segue destination="ngj-JL-bN3" kind="show" identifier="registerSegue" id="vGn-zB-9v2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,34 +246,11 @@
                     <connections>
                         <outlet property="emailOutlet" destination="fnn-Y9-Bq3" id="qr7-HY-oRT"/>
                         <outlet property="passwordOutlet" destination="MNR-2g-nM6" id="zGs-YT-MaA"/>
-                        <segue destination="jy1-Ye-UxI" kind="show" identifier="registerSegue" id="Nth-ad-CLk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cf-lE-qHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="849"/>
-        </scene>
-        <!--ListShopVC-->
-        <scene sceneID="iUF-CG-Prs">
-            <objects>
-                <viewController title="ListShopVC" id="jy1-Ye-UxI" customClass="ListTableViewController" customModule="ListShop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s8h-13-gMM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-Ui-cow">
-                                <rect key="frame" x="16" y="60" width="343" height="587"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="bfy-bq-B2H"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mUx-pc-JJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2551" y="421"/>
+            <point key="canvasLocation" x="1729" y="979"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1a3-w5-fav">
@@ -266,6 +272,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lzd-Zo-KKE"/>
+        <segue reference="vGn-zB-9v2"/>
     </inferredMetricsTieBreakers>
 </document>
